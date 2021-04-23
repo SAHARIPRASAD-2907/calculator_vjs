@@ -12,12 +12,15 @@ let apiQuotes = [];
 //     const quote = localQuotes[Math.floor(Math.random()*localQuotes.length)]
 //     console.log(quote);
 // }
+
+//Loading spinner shower
 function loading() {
     loader.hidden = false;
     quoteContainer.hidden = true;
   }
 
-  function complete() {
+//Remove Loading spinner
+function complete() {
     quoteContainer.hidden = false;
     loader.hidden = true;
   }
